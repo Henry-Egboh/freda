@@ -1,0 +1,526 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+    /*general declaration ========================= */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsla(29, 67.2%, 11%, 0.1);
+    font-size: 100%;
+    font-weight: bold;
+    height: 100vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1px;
+    height: 100vh;
+}
+
+ul{
+    list-style: none;
+}
+
+h1, h2, h3, h4, p{
+    margin: 5px;
+    padding: 10px;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Merriweather', serif;
+    font-weight: 500;
+}
+
+    /* general text styling*/
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+h3 + p{
+    color: rgb(231, 173, 173);
+}
+
+h3{
+    color: #979797;
+}
+
+.caption h5{
+    margin: 0px;
+    padding: 10px 0px;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+}
+
+.box1 h2{
+    color: rgb(210, 229, 233);
+    font-size: 1.125em;
+    padding: 20px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.box1 p{
+    text-align: left;
+    padding: 10px 20px 40px;
+}
+
+.nav .box1 > p{
+    color: rgb(231, 173, 173);
+}
+
+.logo h1{
+    font-weight: bold;
+    font-size: 40px;
+    padding-left: 100px;
+    margin: 0px;
+}
+
+.section .container .card2 .card22 p{
+    color: #fefefe;
+}
+
+/*  image styling=================================*/
+
+.social img{
+    width: 50px;
+    height: 50px;
+}
+
+.box2 img{
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 6px;
+}
+
+.fa{
+    margin-right: 6px;
+}
+
+/* ====================================
+                              HEADER AND NAV BAR =============================================*/
+
+ /* header with nav bar  */
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #5e2929;
+}
+    /* logo text  */
+
+.logo a{
+    text-decoration: none;
+    color: #beba75;
+}
+
+/* nav list item  */
+
+.navbar ul{
+  overflow: hidden;
+}
+
+.navbar ul li{
+    float: left;
+    margin-left: 10px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    /*text-align: center;*/
+    padding: 22px 26px;
+    color: rgb(210, 229, 233);
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: block;
+}
+
+.navbar ul li a:hover{
+    color: rgb(29, 36, 37);
+    background-color: #b8b193;
+    transition: all 0.5s ease-in;
+    border-bottom: 1px solid #fefefe;
+}
+
+/* second  nav bar with image */
+.nav .container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    align-items: center;
+    flex: 1;
+    background-color: hsla(67, 67.2%, 11%, 0.1);
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nav .container .box1{
+    width: 50%;
+    background-color: hsla(67, 21%, 11%, 0.6);
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.2);
+    border: 2px ridge hsla(29, 67.2%, 11%, 0.4);
+    border-radius: 4px;
+    padding: 30px;
+}
+
+/* ====================================
+                               
+                    SECTION WITH SIGN UP AND THREE CONTENTS ON CARDS =============================*/
+
+                        /*main container*/
+.section .container{
+    display: flex;
+    /*flex: 1;*/
+    justify-content: start;
+    align-items: flex-start;
+}
+
+                    /*column one (sign up)*/
+/*.section .container .card1{
+    display: flex;
+}*/
+
+.card1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 60px 20px 0px;
+    /* background-color: rgb(231, 173, 173);  */
+    flex: 1;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px 4px rgba(30, 30, 30, 0.2);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+.radio{
+    margin: 30px 0px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.fname, .email{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px 0px;
+}
+
+    /* style label and radio button  */
+.label, .radio{
+        font-size: 14px;
+        font-weight: 400;
+        color: #180c0a;
+}
+    /* align the submit button  */
+.submit{
+    align-self: center;
+    width: 100%;
+}
+
+    /* style the input types  */
+input[type="text"], input[type="email"]{
+    padding: 10px;
+    font-size: 14px;
+    background-color: #f4f5ee;
+    outline: none;
+    border: none;
+    width: 250px;
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+}
+
+input[type="text"]:focus, input[type="email"]:focus{
+    background-color: rgb(7, 29, 34);
+    border: 1px groove hsla(67, 21%, 11%, 0.6);
+    color: #f4f5ee;
+    transition: width 0.5s ease-in-out;
+    border-radius: 0px;
+    width: 300px;
+   /* align-self: flex-end; */
+}
+
+    /* spacing the input and the label  */
+input[type="email"]{
+    margin-left: 46px;
+}
+
+input[type="text"]{
+    margin-left: 10px; 
+}
+
+input[type="radio"]{
+    margin: 0px 10px;
+}
+
+    /* align the radios directly below the input types */
+input[type="radio"]:nth-of-type(1){
+    margin-left: 25px;
+}
+
+    /* style the submit button */
+input[type="submit"]{
+    margin: 0px 0px 10px;
+    border: none;
+    width: 100%;
+    background-color: hsla(29, 67.2%, 11%, 0.4);
+    color: rgb(210, 229, 233);
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px inset #f4f5ee;
+    border-radius: 10px;
+}
+
+/* Using positioning and pseudo-code to create border bottom on form title */
+.caption{
+    position: relative;
+    padding: 10px 0px 6px;
+    margin: 10px 0px 20px;
+}
+    /* after the text add a border of 20%  */
+.caption::after{
+    content: "";
+    background: #180c0a;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 2px;
+    width: 30%;
+}
+
+                    /* column two with (three card styled contents) */
+.section .container .card2{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+/* first div card---- with two divs styled as cards */
+.section .container .card2 .card21{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+        /*sub div one*/
+.section .container .card2 .card21_2{
+    margin: 0px 20px 0px 20px;
+}
+
+ /* border properties on the two horizontal divs*/
+ .section .container .card2 .card21_1, .section .container .card2 .card21_2, .section .container .card2 .card22{
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.2);
+    border: 2px ridge hsla(29, 67.2%, 11%, 0.4);
+    margin-top: 60px;
+    /*text-align: center;*/
+}
+
+ /* two row div cards */
+.section .container .card2 .card21_1, .section .container .card2 .card21_2{
+    border-radius: 6px;
+    padding: 20px;
+    background-color: rgb(7, 29, 34);
+    text-align: center;
+}
+
+/* second div card ----------*/
+.section .container .card2 .card22{
+    padding: 60px 20px;
+    text-align: left;
+    margin-right: 20px;
+    background-color: hsla(67, 21%, 11%, 0.6);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+/* =================================================
+                                                FOOTER SECTION===================================*/
+
+            /*main footer div*/
+.footer_div{
+    display: flex;
+    padding: 20px;
+    background-color: rgb(7, 29, 34);
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.2);
+    border: 2px ridge hsla(29, 67.2%, 11%, 0.4);
+}
+
+        /* footer left with text */
+.footer_div .footer_text{
+    flex: 2;
+}
+
+    /* div with list items and line of text*/
+.footer_div .main_footer_list{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_div .main_footer_list .footer_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+    letter-spacing: 1.5px;
+}
+
+
+        /*general vertical list styling*/
+.footer_list_1, .footer_list_2, .footer_list_3{
+    padding: 20px;
+}
+
+.footer_list_1 ul, .footer_list_2 ul, .footer_list_3 ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer_list_1 ul li a, .footer_list_2 ul li a, .footer_list_3 ul li a{
+    text-decoration: none;
+    color: rgb(210, 229, 233);
+    display: block;
+    padding: 12px 16px;
+}
+
+.footer_list_1 ul li a:hover, .footer_list_2 ul li a:hover, .footer_list_3 ul li a:hover{
+    color: rgb(29, 36, 37);
+    background-color: #b8b193;
+    transition: all 0.5s ease-in;
+    border-bottom: 1px solid #fefefe;
+}
+
+
+/* footer for copyright and social icons*/
+
+.copy_social{
+    color: rgb(210, 229, 233);
+    display: flex;
+    flex-direction: row;
+}
+
+.copy_social a{
+    color: rgb(210, 229, 233);
+    text-decoration: none;
+}
+
+
+/* ========================================
+
+                                media query section 
+                                
+                                                =================================================  */
+
+@media screen and (max-width: 568px) {
+        /* main header content  */
+    .header .container{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 10px 0px;
+        /* background-color: #5e2929; */
+        background-color: #979797;
+    }
+
+    /* align logo with navbar  */
+    .logo h1{
+        padding-left: 10px;
+    }
+
+    .logo a{
+        color: #56ffb0;
+    }
+
+
+    /* stack navbar  */
+    .navbar ul li{
+        float: none;
+    }
+    
+    .navbar ul li a{
+        display: block;
+    }
+
+    /* second nav with image  */
+    .nav .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 10px;
+        align-items: center;
+        width: 100%;
+        /* flex: 1; */
+    }
+
+    .nav .container .box1{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* hide box2 image  */
+    .box2{
+        display: none;
+    }
+
+    /* section with sign up and three cards  */
+    .section .container{
+        /* display: flex; */
+        flex-direction: column;
+    }
+
+    /* sign up sizing  */
+    .card1{
+        /* display: flex; */
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        width: 96%;
+        margin: 20px 10px 10px;
+        padding: 40px;
+    }
+
+    /* stack the two dark blue cards  */
+    .section .container .card2 .card21{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+    }
+        /* margin for the three cards  */
+    .section .container .card2 .card21_1, .section .container .card2 .card21_2, .section .container .card2 .card22{
+        margin: 10px;
+    }
+
+    /* stack the footer items  */
+    .footer_div{
+        flex-direction: column;
+        margin: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
