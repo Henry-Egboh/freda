@@ -364,6 +364,7 @@ input[type="submit"]{
         /* footer left with text */
 .footer_div .footer_text{
     flex: 2;
+    align-self: center;
 }
 
     /* div with list items and line of text*/
